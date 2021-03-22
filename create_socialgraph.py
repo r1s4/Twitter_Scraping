@@ -10,7 +10,7 @@ from requests_oauthlib import OAuth1Session
 from mongo_dao import MongoDAO
 
 mongo = MongoDAO("db", "followers_info")
-start_screen_name = 'izumi_morikubo' # このユーザーのフォロワーのうち相互フォローとなるユーザーに関するソーシャルグラフを出力，可視化する(これを変える)
+start_screen_name = 'hoge' # このユーザーのフォロワーのうち相互フォローとなるユーザーに関するソーシャルグラフを出力，可視化する(これを変える)
 #DENEBU7
 
 # 新規グラフを作成
