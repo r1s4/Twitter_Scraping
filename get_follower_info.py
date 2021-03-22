@@ -26,11 +26,10 @@ mongo = MongoDAO("db", "followers_info")
 get_friends_url = "https://api.twitter.com/1.1/friends/list.json" # フォローしているアカウントを取得
 get_user_info_url = "https://api.twitter.com/1.1/users/show.json" # ユーザー情報を取得する
 count = 200
-targets = ['izumi_morikubo'] # このユーザーのフォロワーのうち相互フォローとなるユーザーを求める(これを変える)
-#'moteging','dfebz614_ii','DENEBU7'
+targets = ['hoge'] # このユーザーのフォロワーのうち相互フォローとなるユーザーを求める(これを変える)
 registed_list = []
 depth = 2 # 潜る深さ
-max_friends_count = 10000 # フォローアカウントがめちゃくちゃ多い人が居るので一定数を超えてると除外する
+max_friends_count = 10000 # フォローアカウントが多い人が居るので一定数を超えてると除外する
 
 # フォローアカウントが一定数を超えていないか判定する
 def judge_friends_count(screen_name):
